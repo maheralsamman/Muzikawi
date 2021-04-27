@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext, createContext } from "react";
+import React, {  useContext } from "react";
 import JobListItem from "../components/JobListItem";
 import { UserContext } from "../contexts/UserContextProvider";
 import SearchInput from "../components/SearchInput";

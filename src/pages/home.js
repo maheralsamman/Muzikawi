@@ -4,7 +4,6 @@ import HeroMobImg from "../images/img_Main_Mob.png";
 import styled from "styled-components";
 import Carousel, { consts } from "react-elastic-carousel";
 import "../index.css";
-import { red } from "@material-ui/core/colors";
 import Album1 from "../images/Album1.png";
 import Album2 from "../images/Album2.png";
 import Album3 from "../images/Album3.png";
@@ -206,7 +205,7 @@ const myArrow = ({ type, onClick, isEdge }) => {
   );
 };
 
-function home() {
+function Home() {
   return (
     <div>
       <HeroSection>
@@ -351,4 +350,4 @@ function home() {
   );
 }
 
-export default home;
+export default Home;

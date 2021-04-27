@@ -6,19 +6,19 @@ import Footer from "./components/Footer";
 import "./App.css";
 
 //Pages
-import studio from "./pages/studio";
-import home from "./pages/home";
+import Studio from "./pages/Studio";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Navbar />
-        <home />
+        
         <div className="container">
           <Switch>
-            <Route exact path="/" component={home} />
-            <Route exact path="/studio" component={studio} />
+            <Route exact path="/" component={Home}/>
+            <Route exact path="/Studio" component={Studio} />
           </Switch>
         </div>
 
