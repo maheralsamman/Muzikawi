@@ -25,7 +25,6 @@ const BigNav = styled.div`
   grid-template-columns: 10% 5% 55% 10%;
   //column-gap: 0px ;
 
-
   justify-content: space-between;
   align-items: center;
   align-content: center;
@@ -44,8 +43,6 @@ const Links = styled.div`
   align-self: center;
   justify-self: self-end;
   align-content: center;
-
-
 
   right: 0em;
   position: relative;
@@ -95,16 +92,16 @@ const StyledLink = styled(Link)`
   margin-left: 40px;
   @media (max-width: 1100px) {
     margin-left: 20px;
-}
+  }
 `;
 
 const MenuButton = styled.img`
-position: absolute;
-width: 65px;
-display: none;
-right: 1.5em;
-top: 0.6em;
-@media (max-width: 1000px) {
+  position: absolute;
+  width: 65px;
+  display: none;
+  right: 1.5em;
+  top: 0.6em;
+  @media (max-width: 1000px) {
     display: block;
   }
 `;

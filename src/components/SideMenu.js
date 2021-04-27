@@ -17,15 +17,14 @@ import {
   SidebarContent,
 } from "react-pro-sidebar";
 
-
 //import sidebar css from react-pro-sidebar module and our custom css
 import "react-pro-sidebar/dist/css/styles.css";
 import "../style/SideMenu.css";
 
 const MenuButton = styled.img`
-width: 50px;
-margin-right:30px;
-margin-top: -30px;
+  width: 50px;
+  margin-right: 30px;
+  margin-top: -30px;
 `;
 
 const Header = (props) => {
@@ -46,24 +45,22 @@ const Header = (props) => {
       <div id="header">
         {/* collapsed props to change menu size using menucollapse state */}
         <ProSidebar collapsed={menuCollapse}>
-        
-
           <SidebarHeader>
             <div className="closemenu" onClick={menuIconClick}>
               {/* changing menu collapse icon on click */}
-               <MenuButton onClick={menuIconClick} src={Close} alt="Close" />
-               
+              <MenuButton onClick={menuIconClick} src={Close} alt="Close" />
             </div>
           </SidebarHeader>
           <SidebarContent>
             <Menu iconShape="square">
-              <MenuItem active={true} >
-                LABEL  &nbsp;           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; <img src={Down} alt="Muzikawi" />
+              <MenuItem active={true}>
+                LABEL &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp;&nbsp;&nbsp; <img src={Down} alt="Muzikawi" />
               </MenuItem>
               <MenuItem>PUBLISHING</MenuItem>
               <Link variant="body2" to="/studio" href="/studio">
-              <MenuItem>STUDIO</MenuItem>
-          </Link>
+                <MenuItem>STUDIO</MenuItem>
+              </Link>
               <MenuItem>LIVE & CLOSEUP</MenuItem>
               <MenuItem>PODCAST</MenuItem>
               <MenuItem>ABOUT</MenuItem>
@@ -71,7 +68,9 @@ const Header = (props) => {
           </SidebarContent>
           <SidebarFooter>
             <Menu iconShape="square">
-              <MenuItem><img src={EngSwe} alt="EngSwe" /></MenuItem>
+              <MenuItem>
+                <img src={EngSwe} alt="EngSwe" />
+              </MenuItem>
               {/* <MenuItem icon={<AppIcon />}>Logout</MenuItem> */}
             </Menu>
           </SidebarFooter>
